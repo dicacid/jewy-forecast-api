@@ -8,6 +8,12 @@ copies of the app's own pipeline, and `src/server/standalone.ts` serves them ove
 `node:http` without the app's auth, database or RPC stack. Re-sync with
 `scripts/sync-api-repo.mjs` in the app project rather than editing the copies by hand.
 
+## Live service
+
+<https://jewy-forecast-api.onrender.com> — a Render web service in Singapore on the free plan.
+Free instances sleep after about fifteen minutes without traffic, so the first request of the day
+can take 30–50 seconds while the instance wakes.
+
 ## Endpoints
 
 | Path | Purpose |
