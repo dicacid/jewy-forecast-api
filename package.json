@@ -1,0 +1,19 @@
+{
+  "name": "jewy-forecast-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Read-only forecast API for the JEWY estuary conditions app (experimental, not catch probability).",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "esbuild src/server/standalone.ts --bundle --platform=node --format=esm --target=node20 --outfile=dist/server.mjs",
+    "start": "node dist/server.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "typescript": "^5.9.2"
+  }
+}
